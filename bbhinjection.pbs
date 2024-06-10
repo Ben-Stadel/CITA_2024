@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=48:00:00
+#PBS -j oe
+#PBS -q sandyq
+
+cd /fs/lustre/cita/bstadel
+bilby_pipe test_bbhinjection.ini --local
